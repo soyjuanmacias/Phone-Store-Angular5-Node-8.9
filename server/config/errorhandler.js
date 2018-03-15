@@ -10,6 +10,6 @@ module.exports = (app) => {
     res.locals.error = req.app.get('env') === 'development' ? error : {};
 
     res.status(error.status || 500);
-    res.json({message: `Error: ${error.status || 500}`});
+    res.json({Error: `Error: ${error.status || 500}`});
   });
 }
