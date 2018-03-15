@@ -1,8 +1,7 @@
 const express = require('express');
 const router = express.Router();
+const phonesController = require('../controllers/phones.controller');
 
-router.get('/', (req, res, next) => {
-  res.send('respond with a resource');
-});
+router.get('/', phonesController.getPhones);
 
 module.exports = router;

@@ -1,8 +1,8 @@
 module.exports = (app) => {
   app.use((req, res, next) => {
     const error = new Error('Not Found');
-    err.status = 404;
-    next(err);
+    error.status = 404;
+    next(error);
   });
 
   app.use((error, req, res, next) => {
@@ -10,6 +10,6 @@ module.exports = (app) => {
     res.locals.error = req.app.get('env') === 'development' ? error : {};
 
     res.status(error.status || 500);
-    res.json({message: `Error: ${error.status}`});
+    res.json({message: `Error: ${error.status || 500}`});
   });
 }
