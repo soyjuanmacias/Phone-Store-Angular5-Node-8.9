@@ -1,0 +1,21 @@
+
+.phonelist__container {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.phone__container {
+  width: 33%;
+}
+
+@media (max-width: 768px) {
+  .phone__container {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .phone__container {
+    width: 90%;
+  }
+}
