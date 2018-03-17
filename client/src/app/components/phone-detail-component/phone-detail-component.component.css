@@ -1,0 +1,21 @@
+.phone__content {
+  padding: 20px;
+  box-sizing: border-box;
+  align-items: center;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transform: perspective(1px) translateZ(0);
+  cursor: pointer;
+}
+
+.phone__content:hover {
+  transform: scale(1.1);
+}
+
+.phone__img {
+  width: 200px;
+}
+
+.phone__feature {
+  font-weight: bold;
+}
