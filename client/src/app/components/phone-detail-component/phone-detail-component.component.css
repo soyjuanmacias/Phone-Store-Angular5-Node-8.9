@@ -1,5 +1,6 @@
 .phone__content {
   padding: 20px;
+  width: 100%;
   box-sizing: border-box;
   align-items: center;
   transition-property: transform;
@@ -14,6 +15,10 @@
 
 .phone__img {
   width: 200px;
+}
+
+.phone__feature__list {
+  list-style: none;
 }
 
 .phone__feature {
