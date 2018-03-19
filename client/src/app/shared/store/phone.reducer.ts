@@ -1,4 +1,5 @@
 import { PhoneState } from './../model/phonestate.model';
+
 export const GET_PHONES = 'GET_PHONES';
 export const GET_PHONES_SUCCESS = 'GET_PHONES_SUCCESS';
 export const GET_PHONES_ERROR = 'GET_PHONES_ERROR';
@@ -15,7 +16,7 @@ const initialState: PhoneState = {
   error: null,
 };
 
-export const phones = (state = initialState, {type, payload}) => {
+export function phones (state = initialState, {type, payload}) {
   switch (type) {
     case GET_PHONES:
       return Object.assign({}, state, {pending: true, error: null});

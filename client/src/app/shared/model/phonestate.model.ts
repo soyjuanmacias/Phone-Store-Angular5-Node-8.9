@@ -1,5 +1,5 @@
 export class PhoneState {
-  phones: Object[];
+  phones: Array<any>;
   pending: Boolean;
   error: any;
 }
