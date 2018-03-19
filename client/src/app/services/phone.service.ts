@@ -1,25 +1,24 @@
 import { environment } from './../../environments/environment';
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Http, Headers, RequestOptions, Response } from '@angular/http';
 import { Observable } from 'rxjs';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/catch';
-
-const baseUrl = `http://localhost:3000`;
-const getPhonesUrl = `${baseUrl}/phones`;
-
-const httpOptions = {
-  headers: new HttpHeaders({
-    'Access-Control-Allow-Origin': '*',
-  })
-};
 
 @Injectable()
 export class PhoneService {
-  constructor(private http: HttpClient) { }
+
+  private baseUrl = `http://localhost:3000`;
+  private getPhonesUrl = `${this.baseUrl}/phones`;
+
+  private httpOptions: RequestOptions = new RequestOptions({
+    headers: new Headers({
+      'Access-Control-Allow-Origin': '*',
+    })
+  });
+
+  constructor(private http: Http) { }
 
   getPhones() {
-    return this.http.get(getPhonesUrl, httpOptions)
+    return this.http.get(this.getPhonesUrl, this.httpOptions)
       .map((res: Response) => {
         return res;
       })
