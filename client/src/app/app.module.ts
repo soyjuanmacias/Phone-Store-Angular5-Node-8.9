@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { EffectsModule } from '@ngrx/effects';
 import { PhonesEffects } from './services/phone.effects';
 import { PhoneService } from './services/phone.service';
@@ -19,6 +20,7 @@ import { PhoneDetailComponentComponent } from './components/phone-detail-compone
   imports: [
     BrowserModule,
     HttpModule,
+    HttpClientModule,
     StoreModule.forRoot({phones}),
     EffectsModule.forRoot([PhonesEffects]),
   ],
