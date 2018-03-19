@@ -22,7 +22,6 @@ export class PhoneService {
   getPhones() {
     return this.http.get(this.getPhonesUrl, this.httpOptions)
       .map((res: Response) => {
-        console.log(res);
         return res.json();
       })
       .catch(error => this.handleError(error));
