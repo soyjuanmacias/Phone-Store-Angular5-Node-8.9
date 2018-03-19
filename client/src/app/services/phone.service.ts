@@ -8,7 +8,7 @@ import 'rxjs/add/operator/catch';
 @Injectable()
 export class PhoneService {
 
-  private baseUrl = `http://localhost:3000`;
+  private baseUrl = `https://opinno-phonestore.herokuapp.com`;
   private getPhonesUrl = `${this.baseUrl}/phones`;
 
   private httpOptions: RequestOptions = new RequestOptions({
