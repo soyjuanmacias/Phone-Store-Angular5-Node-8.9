@@ -16,6 +16,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.store.dispatch(getPhones());
     this.store.select('phones').subscribe(data => {
+      console.log(data);
       this.phoneState = data;
     });
   }

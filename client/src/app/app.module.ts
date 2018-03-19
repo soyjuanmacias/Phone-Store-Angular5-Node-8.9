@@ -1,4 +1,4 @@
-import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
 import { EffectsModule } from '@ngrx/effects';
 import { PhonesEffects } from './services/phone.effects';
 import { PhoneService } from './services/phone.service';
@@ -7,7 +7,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { StoreModule } from '@ngrx/store';
 import { AppComponent } from './app.component';
-import { Http, HttpModule } from '@angular/http';
 import { PhoneListContainerComponent } from './components/phone-list-container/phone-list-container.component';
 import { PhoneDetailComponentComponent } from './components/phone-detail-component/phone-detail-component.component';
 
@@ -20,12 +19,10 @@ import { PhoneDetailComponentComponent } from './components/phone-detail-compone
   imports: [
     BrowserModule,
     HttpModule,
-    HttpClientModule,
     StoreModule.forRoot({phones}),
     EffectsModule.forRoot([PhonesEffects]),
   ],
   providers: [
-    Http,
     PhoneService
   ],
   bootstrap: [AppComponent]
