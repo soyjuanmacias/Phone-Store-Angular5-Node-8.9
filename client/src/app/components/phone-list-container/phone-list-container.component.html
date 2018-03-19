@@ -1,4 +1,9 @@
-<div class="flex phonelist__container">
+<div *ngIf="checkStatus()" class="spinner__container">
+  <div class="spinner"></div>
+  <div class="spinner__text" *ngIf="checkPending()">Obteniendo datos del servidor...</div>
+  <div class="spinner__text" *ngIf="error">Ha ocurrido un error, recarge la página por favor</div>
+</div>
+<div *ngIf="phones" class="flex phonelist__container">
   <div class="phone__container" *ngFor="let phone of phones">
     <app-phone-detail-component [phone]="phone"></app-phone-detail-component>
   </div>
