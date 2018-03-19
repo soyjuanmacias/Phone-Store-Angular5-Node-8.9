@@ -1,5 +1,16 @@
 {
+  "name": "masmovil-api",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "postinstall": "cd server && npm install && npm start"
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "debug": "~2.6.9",
+    "express": "~4.15.5"
   }
 }
