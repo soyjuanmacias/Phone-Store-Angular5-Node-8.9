@@ -1,0 +1,16 @@
+
+{
+  "extends": [
+    "google",
+    "plugin:angular/johnpapa"
+  ],
+  "rules": {
+    "require-jsdoc": "off",
+    "valid-jsdoc": "off",
+    "new-cap": "off",
+    "no-invalid-this": "off",
+    "linebreak-style": "off",
+    "react/prop-types": "off"
+  },
+  "root": true
+}
