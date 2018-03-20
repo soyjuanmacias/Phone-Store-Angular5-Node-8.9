@@ -9,5 +9,4 @@ import { Phone } from '../../shared/model/phone.model';
 })
 export class PhoneDetailComponentComponent {
   @Input() phone: Phone = this.phone;
-  constructor() { }
 }
