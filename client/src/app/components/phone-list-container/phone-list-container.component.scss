@@ -1,0 +1,21 @@
+@import '~sass-rem';
+@import '../../styles/medias.scss';
+
+.phonelist__container {
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: rem(25px);
+}
+
+.phone__container {
+  width: 33%;
+  padding: rem(20px);
+  box-sizing: border-box;
+
+  @media screen and (max-width: $break-tablet) {
+    width: 50%;
+  }
+  @media screen and (max-width: $break-mobile) {
+    width: 90%;
+  }
+}
