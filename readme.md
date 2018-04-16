@@ -1,4 +1,5 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/53f5f1f8de41c29601d9/maintainability)](https://codeclimate.com/github/soyjuanmacias/phone-store/maintainability) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e11ad02693074a6f9ed7bcfed6c4b398)](https://www.codacy.com/app/soyjuanmacias/phone-store?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=soyjuanmacias/phone-store&amp;utm_campaign=Badge_Grade) 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/e11ad02693074a6f9ed7bcfed6c4b398)](https://www.codacy.com/app/soyjuanmacias/phone-store?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=soyjuanmacias/phone-store&amp;utm_campaign=Badge_Grade) 
+[![Maintainability](https://api.codeclimate.com/v1/badges/53f5f1f8de41c29601d9/maintainability)](https://codeclimate.com/github/soyjuanmacias/phone-store/maintainability)
 
 # Opinno Coding Challenge
 
