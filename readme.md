@@ -6,7 +6,7 @@
 ### Technologies
   - __Node__
   - __Express__
-  - __Angular 4__
+  - __Angular 5__
 
 
 ### Run Server
